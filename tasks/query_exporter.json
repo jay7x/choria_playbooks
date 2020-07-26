@@ -1,0 +1,16 @@
+{
+  "description": "Query values from prometheus exporter",
+  "puppet_task_version": 1,
+  "supports_noop": false,
+  "input_method": "stdin",
+  "parameters": {
+    "url": {
+      "description": "Exporter URL to query",
+      "type": "String[1]"
+    },
+    "metrics": {
+      "description": "Metrics to fetch",
+      "type": "Optional[Array[String]]"
+    }
+  }
+}

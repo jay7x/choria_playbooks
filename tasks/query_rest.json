@@ -1,0 +1,24 @@
+{
+  "description": "Make request to URL returning JSON received",
+  "puppet_task_version": 1,
+  "supports_noop": false,
+  "input_method": "stdin",
+  "parameters": {
+    "url": {
+      "description": "URL to query",
+      "type": "String[1]"
+    },
+    "method": {
+      "description": "Method to use (GET/POST/...)",
+      "type": "Optional[Enum['GET','POST','PUT','DELETE','HEAD','LIST']]"
+    },
+    "headers": {
+      "description": "Hash of headers to send",
+      "type": "Optional[Hash]"
+    },
+    "data": {
+      "description": "Hash of data to send",
+      "type": "Optional[String]"
+    }
+  }
+}
